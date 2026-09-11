@@ -13,8 +13,8 @@ class Pilha:
     
     def __init__(self, capacidade: int, typecode: str = 'i'):
         if capacidade <= 0:
-            raise ValueError("A capacidade deve ser um número inteiro positivo.")
-        
+            raise TipoErro("A capacidade deve ser um número inteiro positivo.")
+
         self._capacidade = capacidade
         self._typecode = typecode
         self._dados = array.array(typecode)

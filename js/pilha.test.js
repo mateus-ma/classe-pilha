@@ -38,7 +38,7 @@ function executarTestesUnitarios() {
 }
 
 function executarTesteEstresse() {
-    const n = 5_000_000; // 5 Milhões
+    const n = 10_000_000; // 5 Milhões
     console.log(`\n[JS Estresse - ${n} elementos]`);
     const p = new Pilha(n, Float64Array);
 

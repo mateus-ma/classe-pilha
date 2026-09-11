@@ -15,7 +15,7 @@ public:
     explicit Pilha(std::size_t cap);
     ~Pilha();
 
-    // Desabilita cópia rasa para prevenir vazamento e double-free
+    // Desabilita cópia rasa
     Pilha(const Pilha&) = delete;
     Pilha& operator=(const Pilha&) = delete;
 
@@ -27,7 +27,7 @@ public:
     std::size_t tamanho() const;
 };
 
-// Inclui a implementação das funções-membro baseadas em template
+// Inclui a implementação do template
 #include "Pilha.cpp"
 
 #endif
