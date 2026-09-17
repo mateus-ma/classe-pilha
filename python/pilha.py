@@ -28,13 +28,7 @@ class Pilha:
         except (TypeError, ValueError) as err:
             raise TipoErro(f"O dado '{dado}' não é compatível com o tipo estipulado '{self._typecode}'.") from err
 
-    def desempilha():
-        """Desempilha o dado do topo e o retorna."""
-        if self.pilha_esta_vazia():
-            raise PilhaVaziaErro("A pilha está vazia. Não é possível desempilhar.")
-        return self._dados.pop()
 
-    # Ajustado de acordo com a interface solicitada:
     def desempilha(self):
         if self.pilha_esta_vazia():
             raise PilhaVaziaErro("A pilha está vazia. Não é possível desempilhar.")
